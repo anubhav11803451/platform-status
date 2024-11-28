@@ -1,3 +1,29 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+    "extends": [
+        "next/core-web-vitals",
+        "next/typescript",
+        "plugin:prettier/recommended",
+        "plugin:tailwindcss/recommended"
+    ],
+    "plugins": ["prettier"],
+    "ignorePatterns": ["node_modules/**", "public/**", "tsconfig.json", "*.d.ts"],
+    "rules": {
+        "prettier/prettier": "error",
+        // Tailwind specific fix
+        "tailwindcss/no-custom-classname": [0],
+        // "jsx-quotes": ["error", "double"],
+        // "quotes": [2, "double"],
+        "semi": ["error", "always"],
+        "react/prop-types": "off",
+        // NextJs specific fix: suppress errors for missing 'import React' in files for nextjs
+        "react/react-in-jsx-scope": "off",
+        // NextJs specific fix: allow jsx syntax in ts and tsx files
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [".ts", ".tsx"]
+            }
+        ],
+        "react/display-name": "off"
+    }
 }
