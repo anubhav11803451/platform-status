@@ -6,6 +6,12 @@
         "plugin:tailwindcss/recommended"
     ],
     "plugins": ["prettier"],
+    "settings": {
+        "tailwindcss": {
+            "callees": ["cn", "cva"],
+            "classRegex": "^(class(Name))?$"
+        }
+    },
     "ignorePatterns": ["node_modules/**", "public/**", "tsconfig.json", "*.d.ts"],
     "rules": {
         "prettier/prettier": "error",
