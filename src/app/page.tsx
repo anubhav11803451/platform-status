@@ -62,14 +62,6 @@ export default function StatusPage() {
                         </CardContent>
                     </Card>
                 </div>
-                <div className="mt-8 text-center text-sm text-muted-foreground">
-                    <Link href="/admin" className="hover:underline">
-                        Admin Dashboard
-                    </Link>
-                    <Button variant="secondary" className="ml-2">
-                        Go to API
-                    </Button>
-                </div>
             </div>
         </div>
     );
