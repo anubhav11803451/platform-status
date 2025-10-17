@@ -3,10 +3,6 @@ import { ServicesList } from "@/components/admin/services-list";
 import { CreateService } from "@/components/admin/create-service";
 import { ServiceStatus } from "@/lib/db/schema";
 
-// async function getServices() {
-//     const res = await fetch("http://localhost:3000/api/services");
-//     return res.json();
-// }
 
 const services = [
     {
