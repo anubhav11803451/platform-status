@@ -3,7 +3,6 @@ import { ServicesList } from "@/components/admin/services-list";
 import { CreateService } from "@/components/admin/create-service";
 import { ServiceStatus } from "@/lib/db/schema";
 
-
 const services = [
     {
         id: "1",
